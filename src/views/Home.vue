@@ -2,17 +2,19 @@
   <div class="ecommerce-widget">
     <div class="row" style="height: 100%">
       <div class="col-xl-10 col-lg-10 col-md-10 col-sm-11 col-12" style="margin: 0 auto;">
-        <div class="card" style="height: 95%;">
+        <div class="card" style="height: 99%;">
           <b-tabs v-model="tabIndex" card>
             <div class="card-body">
-              <b-card img-src="./images/profile-arav3.png" img-alt="Card image" img-height="600px" img-left class="mb-3" style="height: 900px;">
-                <b-card-text style="line-height: 200%">
+              <b-card class="mb-2">
+                <b-img src="./images/profile-arav3.png" fluid alt="Responsive image"></b-img>
+                <!-- <b-card img-src="./images/profile-arav3.png" img-alt="Card image" img-left img-height="10%" class="mb-3" style="height: 80%;"> -->
+                <b-card-text style="line-height: 200%; width: 100%">
                   <b-tab title="Korean" :title-link-class="linkClass(0)"><p v-html="korean"></p></b-tab>
                   <b-tab title="English" :title-link-class="linkClass(1)"><p v-html="english"></p></b-tab>
                   <b-tab title="Deutsch" :title-link-class="linkClass(2)"><p v-html="deutsch"></p></b-tab>
                 </b-card-text>
                 <b-img src="./images/github_icon.png" fluid alt="Responsive image" style="width: 30px; margin-left: 20px;"></b-img>
-                <b-badge href="#" variant="info">https://github.com/arav-easy1</b-badge>
+                <b-badge href="https://github.com/arav-easy1" variant="info">https://github.com/arav-easy1</b-badge>
               </b-card>
             </div>
           </b-tabs>
